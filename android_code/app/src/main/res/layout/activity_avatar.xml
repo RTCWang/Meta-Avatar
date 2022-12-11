@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#26333B"
+    android:orientation="vertical"
+    tools:context=".activity.AvatarActivity">
+
+    <TextureView
+        android:id="@+id/avatar_view"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="24dp"
+        app:title=""
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#0F000000"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/bgBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="背景色" />
+
+        <RadioGroup
+            android:id="@+id/shirt_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/shirt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/man_radiobutton"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="衣服1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/shirt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/man_radiobutton"
+                android:button="@null"
+                android:gravity="center"
+                android:text="衣服2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/brow_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/brow_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/woman_radiobutton"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="眉毛1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/brow_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/woman_radiobutton"
+                android:button="@null"
+                android:gravity="center"
+                android:text="眉毛2"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+</FrameLayout>
